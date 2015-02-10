@@ -36,7 +36,8 @@
   },
   "keywords": [
     "ember-addon",
-    "customerio"
+    "customerio",
+    "api"
   ],
   "ember-addon": {
     "configPath": "tests/dummy/config"
