@@ -5,6 +5,13 @@
 `ember install:addon ember-cli-customerio`
 
 
+Identifiying and tracking users are available on controllers, routes and
+views. You can easily call these by doing:
+
+`this.cio.identify({ })`
+
+`this.cio.track('someEventName', {})`
+
 ### Configuration
 
 In your environment configuration ensure that you set the site-id and
