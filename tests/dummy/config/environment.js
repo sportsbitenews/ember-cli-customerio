@@ -16,6 +16,11 @@ module.exports = function(environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
+    },
+
+    CIO: {
+      'site-id': '',
+      'api-key': ''
     }
   };
 
@@ -25,6 +30,11 @@ module.exports = function(environment) {
     // ENV.APP.LOG_TRANSITIONS = true;
     // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
     // ENV.APP.LOG_VIEW_LOOKUPS = true;
+    ENV.contentSecurityPolicyHeader = 'Content-Security-Policy-Report-Only';
+    ENV.contentSecurityPolicy = {
+      'script-src': "'self' 'unsafe-inline' assets.customer.io",
+      'img-src': "'self' track.customer.io"
+    };
   }
 
   if (environment === 'test') {
