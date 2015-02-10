@@ -1,7 +1,7 @@
 {
   "name": "ember-cli-customerio",
-  "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "version": "0.0.1",
+  "description": "Ember CLI implementation for Customer.io",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -11,11 +11,11 @@
     "build": "ember build",
     "test": "ember test"
   },
-  "repository": "",
+  "repository": "https://github.com/alvincrespo/ember-cli-customerio",
   "engines": {
     "node": ">= 0.10.0"
   },
-  "author": "",
+  "author": "Alvin Crespo",
   "license": "MIT",
   "devDependencies": {
     "broccoli-asset-rev": "^2.0.0",
