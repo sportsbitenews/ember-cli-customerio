@@ -1,9 +1,16 @@
 ## Ember CLI implementation for Customer.io
 
-### Usage
-
+### Installation
 `ember install:addon ember-cli-customerio`
 
+Once the addon is installed you must then include it in your HTML:
+
+`{{content-for 'customerio'}}`
+
+Reference:
+https://github.com/alvincrespo/ember-cli-customerio/blob/master/tests/dummy/app/index.html#L24
+
+### Usage
 
 Identifiying and tracking users are available on controllers, routes and
 views. You can easily call these by doing:
