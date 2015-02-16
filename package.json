@@ -35,6 +35,9 @@
     "glob": "^4.0.5"
   },
   "keywords": [
+    "ember",
+    "ember-cli",
+    "ember-cli-addon",
     "ember-addon",
     "customerio",
     "api"
