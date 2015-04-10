@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-customerio",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Ember CLI implementation for Customer.io",
   "directories": {
     "doc": "doc",
