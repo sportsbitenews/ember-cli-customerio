@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/alvincrespo/ember-cli-customerio.svg)](https://travis-ci.org/alvincrespo/ember-cli-customerio)
+
 ## Ember CLI implementation for Customer.io
 
 ### Installation
