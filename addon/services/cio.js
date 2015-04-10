@@ -1,32 +1,29 @@
+import Ember from 'ember';
+
 var warn = Ember.Logger.warn;
 
-var computed = Ember.computed;
-
-var CIOMixin = Ember.Mixin.create({
-  _cio: computed(function() {
+export default Ember.Service.extend({
+  _cio: (function() {
     return window._cio || function(){
-        function cioWarn(){
+        function ciowarn(){
           warn("Customer.io was not imported correctly. Please check your configuration.");
         }
-
         return {
           identify: function() {
-            ciowarn()
+            ciowarn();
           },
           track: function(){
-            ciowarn()
+            ciowarn();
           }
         };
-    }
-  }),
+    };
+  }()),
 
   identify: function(userInfo) {
-    this.get('_cio').identify(userInfo);
+    this._cio.identify(userInfo);
   },
 
   track: function(eventName, eventData) {
-    this.get('_cio').track(eventName, eventData);
+    this.request.track(eventName, eventData);
   }
 });
-
-export default CIOMixin;

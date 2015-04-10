@@ -18,7 +18,7 @@ module.exports = function(environment) {
       // when it is created
     },
 
-    CIO: {
+    cio: {
       'site-id': '',
       'api-key': ''
     }
