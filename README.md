@@ -1,9 +1,12 @@
+[![Build Status](https://travis-ci.org/alvincrespo/ember-cli-customerio.svg)](https://travis-ci.org/alvincrespo/ember-cli-customerio)
+
 ## Ember CLI implementation for Customer.io
 
 ### Installation
 `ember install:addon ember-cli-customerio`
 
-Once the addon is installed you must then include it in your HTML:
+Once the addon is installed you must then include it in your HTML
+(preferably right before the opening body tag and closing `<head>` tag):
 
 `{{content-for 'customerio'}}`
 
@@ -25,7 +28,7 @@ In your environment configuration ensure that you set the site-id and
 api-key for the CIO object:
 
 ```
-    CIO: {
+    cio: {
       'site-id': '',
       'api-key': ''
     }
