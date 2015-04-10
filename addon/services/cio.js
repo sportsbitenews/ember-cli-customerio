@@ -24,6 +24,6 @@ export default Ember.Service.extend({
   },
 
   track: function(eventName, eventData) {
-    this.request.track(eventName, eventData);
+    this._cio.track(eventName, eventData);
   }
 });
