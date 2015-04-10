@@ -1,7 +1,9 @@
 var warn = Ember.Logger.warn;
 
+var computed = Ember.computed;
+
 var CIOMixin = Ember.Mixin.create({
-  _cio: function() {
+  _cio: computed(function() {
     return window._cio || function(){
         function cioWarn(){
           warn("Customer.io was not imported correctly. Please check your configuration.");
@@ -16,7 +18,7 @@ var CIOMixin = Ember.Mixin.create({
           }
         };
     }
-  }.property(),
+  }),
 
   identify: function(userInfo) {
     this.get('_cio').identify(userInfo);
